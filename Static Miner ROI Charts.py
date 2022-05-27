@@ -28,7 +28,7 @@ hashpricedf['timestamp'] = pd.to_datetime(hashpricedf['timestamp'])
 hashpricedf = hashpricedf.set_index('timestamp')
 
 dates = ASICdf.index.to_list() #dates is just a list of datetimes for which we have ASIC pricing data. The days which we have ASIC pricing data seems slightly smaller than the days which we have Hashprice data
-under38ROI = [] #create three empty lists where we 
+under38ROI = [] #create three empty lists where we put the ROI calculations
 _38to68ROI = []
 above68ROI = []
 i = 0
